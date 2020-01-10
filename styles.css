@@ -379,3 +379,24 @@ strong {
 #image-breiti { background: url(assets/img/band-breiti.jpg) no-repeat; }
 .single-guy { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1; display: none; opacity: 0; }
 
+
+#prueba-map {
+	background: url(assets/img/band-allgrey.png) no-repeat;
+	background-size: contain;
+}
+#prueba-map img {
+	width: 100%;
+	opacity: 0%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+}
+
+.vom:hover {
+	content: url(assets/img/band-vom.jpg);
+}
+.kuddel:hover {
+	content: url(assets/img/band-kuddel.jpg);
+}

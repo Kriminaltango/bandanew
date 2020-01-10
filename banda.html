@@ -15,7 +15,7 @@
     <title>Die Toten Hosen - Banda</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
             <div class="row">
       <div class="logo col-12 col-md-3 justify-content-center"><a href="index.html">
     <img src="https://i.pinimg.com/originals/10/bb/2a/10bb2a7b838ae6ceacfc65954f153fb0.png" alt="logo Die Toten Hosen" width="100%"></a>
@@ -39,21 +39,16 @@
    </div>
     </header>
     <main>
-      <div id="home-photos-box">
-                    
-        <a id="vom" href="#vom" class="home-roll-box"></a>
-        <a id="kuddel" href="#kuddel" class="home-roll-box"></a>
-        <a id="campino" href="#campino" class="home-roll-box"></a>
-        <a id="andi" href="#andi" class="home-roll-box"></a>
-        <a id="breiti" href="#breiti" class="home-roll-box"></a>
-    
-        <img src="assets/img/band-vom.jpg" alt="" id="image-vom" class="single-guy" />
-        <img src="assets/img/band-kuddel.jpg" alt="" id="image-kuddel" class="single-guy" />
-        <img src="assets/img/band-campino.jpg" alt="" id="image-campino" class="single-guy" />
-        <img src="assets/img/band-andi.jpg" alt="" id="image-andi" class="single-guy" />
-        <img src="assets/img/band-breiti.jpg" alt="" id="image-breiti" class="single-guy" />
-            
-      </div>
+      <div id="prueba-map" class="container">
+       <img id="allgrey" src="assets/img/band-allgrey.png" usemap="#image_map">
+<map name="image_map">
+  <area class="vom" alt="vom" title="vom" href="" coords="237,256 176,608 220,925 445,929 336,254 279,227 281,227 281,227 281,227 " shape="polygon">
+  <area class="kuddel" alt="kuddel" title="kuddel" href="" coords="495,176 406,364 445,929 667,929 620,353 " shape="polygon">
+  <area class="campino" alt="campino" title="campino" href="" coords="692,186 637,381 677,929 917,929 834,360 " shape="polygon">
+  <area class="andi" alt="andi" title="andi" href="" coords="927,163 855,381 919,923 1097,929 1067,413 " shape="polygon">
+  <area class="breiti" alt="breiti" title="breiti" href="" coords="1010,112 1171,282 1245,925 1071,927 965,152 " shape="polygon">
+</map>
+</div>
 
 
     </main>
@@ -103,6 +98,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/imageMapResizer.min.js"></script><script type="text/javascript">
+
+    $('map').imageMapResize();
+
+  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
