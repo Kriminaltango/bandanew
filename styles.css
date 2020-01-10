@@ -364,7 +364,7 @@ strong {
 }
 
 /*BANDA
-=========================*/
+=========================
 #home-photos-box { float: left; width: 100%; background: url(assets/img/band-allgrey.png) no-repeat; padding: 100% 0 0 0; position: relative; }
 #vom { left: 0; }
 #kuddel { left: 20%; }
@@ -394,9 +394,15 @@ strong {
 	margin: 0;
 }
 
-.vom:hover {
+img .vom:hover {
 	content: url(assets/img/band-vom.jpg);
 }
 .kuddel:hover {
 	content: url(assets/img/band-kuddel.jpg);
-}
+}*/
+
+#image-vom { background: url(assets/img/band-vom.jpg) no-repeat; }
+#image-kuddel { background: url(assets/img/band-kuddel.jpg) no-repeat; }
+#image-campino { background: url(assets/img/band-campino.jpg) no-repeat; }
+#image-andi { background: url(assets/img/band-andi.jpg) no-repeat; }
+#image-breiti { background: url(assets/img/band-breiti.jpg) no-repeat; }

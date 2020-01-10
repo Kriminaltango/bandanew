@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="favicon.ico">
     <script src='rollover.js' type="5bea50a323affe0a70491d3c-text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 
     <title>Die Toten Hosen - Banda</title>
   </head>
@@ -42,13 +44,21 @@
       <div id="prueba-map" class="container">
        <img id="allgrey" src="assets/img/band-allgrey.png" usemap="#image_map">
 <map name="image_map">
-  <area class="vom" alt="vom" title="vom" href="" coords="237,256 176,608 220,925 445,929 336,254 279,227 281,227 281,227 281,227 " shape="polygon">
-  <area class="kuddel" alt="kuddel" title="kuddel" href="" coords="495,176 406,364 445,929 667,929 620,353 " shape="polygon">
-  <area class="campino" alt="campino" title="campino" href="" coords="692,186 637,381 677,929 917,929 834,360 " shape="polygon">
-  <area class="andi" alt="andi" title="andi" href="" coords="927,163 855,381 919,923 1097,929 1067,413 " shape="polygon">
-  <area class="breiti" alt="breiti" title="breiti" href="" coords="1010,112 1171,282 1245,925 1071,927 965,152 " shape="polygon">
+  <area class="vom" alt="vom" title="vom" href="" coords="237,256 176,608 220,925 445,929 336,254 279,227 281,227 281,227 281,227 " shape="polygon" data-img="assets/img/band-vom.jpg">
+  <area class="kuddel" alt="kuddel" title="kuddel" href="" coords="495,176 406,364 445,929 667,929 620,353 " shape="polygon" data-img="assets/img/band-vom.jpg">
+  <area class="campino" alt="campino" title="campino" href="" coords="692,186 637,381 677,929 917,929 834,360 " shape="polygon" data-img="assets/img/band-vom.jpg">
+  <area class="andi" alt="andi" title="andi" href="" coords="927,163 855,381 919,923 1097,929 1067,413 " shape="polygon" data-img="assets/img/band-vom.jpg">
+  <area class="breiti" alt="breiti" title="breiti" href="" coords="1010,112 1171,282 1245,925 1071,927 965,152 " shape="polygon" data-img="assets/img/band-vom.jpg">
 </map>
 </div>
+<script>
+    $("#image_map area").each(function(){
+        $(this).bind('hover',function(){
+            var url = $(this).attr('data-img');
+            $('#allgrey').attr('src', url);
+        });
+    });
+</script>
 
 
     </main>
